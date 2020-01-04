@@ -1,0 +1,24 @@
+[
+    {
+        "nume": "Florin",
+        "email": "florin.sorin@yahoo.com",
+        "mesaj": "Ospatarii sunt amabili,iar burgerii sunt foarte zemosi si gustosi"
+
+    },
+    {
+        "nume": "Loredana",
+        "email": "loredana78@yahoo.com",
+        "mesaj": "Mancarea este decenta,iar preturile rezonabile"
+        
+    },
+    {
+        "nume": "Diana",
+        "email": "diana1234@yahoo.com",
+        "mesaj": "Burgerii is faini"
+    },
+    {
+        "nume": "Teofil",
+        "email": "sad_boy666@gmail.com",
+        "mesaj": "Nu-mi place ca-s vegan"
+    }
+]
