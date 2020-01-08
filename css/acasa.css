@@ -1,0 +1,509 @@
+html
+{
+  background-color: whitesmoke;
+  font-family: 'Barlow', sans-serif;
+  font-size: 100%;
+}
+body
+{
+  margin:0;
+}
+a
+{
+  text-decoration: none;
+  color:whitesmoke;
+}
+
+  .titlu
+  {
+    color: chocolate;
+    font-family: 'Pacifico',cursive;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    margin: 0;
+    text-align: center;
+    font-size: 48px;
+    font-size: 3rem;
+    
+
+  }
+  .slogan
+  {
+    color: black;
+    font-family: 'Dancing Script',cursive;
+    position: fixed;
+    top: 150px;
+    width: 100%;
+    height: 40px;
+    margin: 0;
+    text-align: center;
+    font-size: 40px;
+    font-size: 2.5rem;
+    
+    display: none;
+  }
+  .oferta
+  {
+    color: black;
+    font-family: 'Dancing Script',cursive;
+    position: fixed;
+    /*top: 40%;*/
+    top: 25%;
+    width: 100%;
+    height: 35px;
+    margin: 0;
+    text-align: center;
+    font-size: 24px;
+    font-size: 1.5rem;
+  }
+  .conditie
+  {
+    color: black;
+    font-family: 'Dancing Script',cursive;
+    position: fixed;
+    top: 41%;
+    width: 100%;
+    height: 35px;
+    margin: 0;
+    text-align: center;
+    font-size: 23px;
+    font-size: 1.3rem;
+
+  }
+  .valabilitate
+  {
+    color: black;
+    font-family: 'Dancing Script',cursive;
+    position: fixed;
+    top: 47%;
+    width: 100%;
+    height: 35px;
+    margin: 0;
+    text-align: center;
+    font-size: 20px;
+    font-size: 1.25rem;
+
+  }
+  h5 span
+  {
+    color: chocolate;
+  }
+  .text
+  {
+    color: black;
+    font-family: 'Dancing Script',cursive;
+    position: fixed;
+    top: 53%;
+    width: 100%;
+    height: 35px;
+    margin: 0;
+    text-align: center;
+    font-size: 24px;
+    font-size: 1.5rem;
+
+  }
+  .fixed-bar
+  {
+    height: 70px;
+  }
+  .navbar
+  {
+    text-align: center;
+    padding: 20px;
+
+  }
+  .navbar li
+  {
+    display: inline-block;
+    font-family: 'Lobster',cursive;
+    font-size: 0.5rem;
+    font-size: 13px;
+    width: 12%;
+    /*width: 20%;*/
+    background-color: rgb(63, 55, 55);
+    float: none;
+    padding: 0.9rem;
+    position: relative;
+    text-decoration: none;
+    /*font-size: 32px;
+    font-size: 1.8rem;*/
+    transition-duration: 0.5s;
+  }
+  .dropdown li
+  {
+    display: block;
+    padding: 1rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    width: 100%;
+    font-size: 16px;
+    font-size: 0.9rem;
+    z-index: 1;
+  }
+  .navbar li:hover
+  {
+    background-color: chocolate;
+    cursor: pointer;
+  }
+  ul
+  {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+  }
+
+  ul li ul {
+    background: transparent;
+    visibility: hidden;
+    opacity: 0;
+    min-width: 3rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    display: none;
+}
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+ul li ul li {
+  clear: both;
+  width: 100%;
+}
+audio
+{
+  display: none;
+}
+.slider {
+  margin-top: 0;
+  max-width: 300px;
+  height: 200px;
+  background-size: cover;
+  margin: 20px auto;
+  position: relative;
+  top: 180px;
+}
+.slide1,.slide2,.slide3,.slide4,.slide5 {
+  margin-top: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.slide1 {
+  margin-top: 0;
+  background: url("imagini/biteme.jpg")no-repeat center;
+      background-size: cover;
+    animation:fade 8s infinite;
+-webkit-animation:fade 8s infinite;
+
+} 
+.slide2 {
+  margin-top: 0;
+  background: url("imagini/f9f278c011baea76a05b0abe08de0d34.jpg")no-repeat center;
+  background-size: cover;
+  animation:fade2 8s infinite;
+  -webkit-animation:fade2 8s infinite;
+}
+.slide3 {
+  margin-top: 0;
+  background: url("imagini/burger3.png")no-repeat center;
+  background-size: cover;
+  animation:fade3 8s infinite;
+  -webkit-animation:fade3 8s infinite;
+}
+@keyframes fade
+{
+  0%   {opacity:1}
+  33.333% { opacity: 0}
+  66.666% { opacity: 0}
+  100% { opacity: 1}
+}
+@keyframes fade2
+{
+  0%   {opacity:0}
+  33.333% { opacity: 1}
+  66.666% { opacity: 0 }
+  100% { opacity: 0}
+}
+@keyframes fade3
+{
+  0%   {opacity:0}
+  33.333% { opacity: 0}
+  66.666% { opacity: 1}
+  100% { opacity: 0}
+}
+
+@media(min-height: 611px)
+{
+  .slider 
+  {
+    position: relative;
+    top: 210px;
+  }
+
+}
+@media(min-height: 656px)
+{
+  .slider 
+  {
+    position: relative;
+    top: 250px;
+  }
+
+}
+@media(min-height: 740px)
+{
+
+  .conditie
+  {
+    top: 35%;
+  }
+  .valabilitate
+  {
+    top: 40%;
+  }
+  .text
+  {
+    top: 45%;
+  }
+
+}
+@media(min-height: 780px)
+{
+  .slider 
+  {
+    position: relative;
+    top: 310px;
+  }
+
+}
+@media(min-height: 850px)
+{
+  .slider 
+  {
+    position: relative;
+    top: 340px;
+  }
+
+}
+@media(min-width: 400px)
+{
+  .dropdown li
+  {
+    min-width: 160px;
+    
+  }
+  
+   .navbar li
+  {
+    font-size: 0.9rem;
+    font-size: 16px;
+    width: 13%;
+  }
+  
+  .conditie
+  {
+    font-size: 24px;
+    font-size: 1.5rem;
+  }
+
+}
+@media(min-width: 600px)
+{
+   .navbar li
+  {
+    font-size: 1.25rem;
+    font-size: 20px;
+    width: 14%;
+  }
+  
+  .conditie
+  {
+    font-size: 28px;
+    font-size: 1.7rem;
+  }
+
+  .oferta
+  {
+    font-size: 30px;
+    font-size: 1.9rem;
+  }
+
+}
+footer
+{
+  display: none;
+}
+@media(min-width: 768px) /* laptop */
+{
+  footer 
+  {
+    display: initial;
+  }
+  audio
+  {
+    display: initial;
+    width: 30%;
+  }
+  .slogan
+  {
+    top: 25%;
+    
+    display: initial;
+  }
+  .text
+  {
+    top: 50%;
+  }
+  .slider
+  {
+    top: 240px
+  }
+  
+  .navbar li
+  {
+    font-size: 1.5rem;
+    font-size: 24px;
+    width: 16%;
+  }
+  
+  .conditie
+  {
+    top: 40%;
+    font-size: 28px;
+    font-size: 1.7rem;
+  }
+
+  .oferta
+  {
+    top: 35%;
+    font-size: 32px;
+    font-size: 2rem;
+  }
+  .valabilitate
+  {
+    top: 45%;
+    font-size: 22px;
+    font-size: 1.4rem;
+  }
+
+}
+@media(min-height:900px) /* iPad*/
+{
+  .slogan
+  {
+    top: 20%;
+  }
+  .oferta
+  {
+    top: 28%;
+    font-size: 32px;
+    font-size: 2rem;
+  }
+  .conditie
+  {
+    top: 37%;
+  }
+  .valabilitate
+  {
+    top: 42%;
+  }
+  .text
+  {
+    top: 47%;
+  }
+  
+  .slider
+  {
+    top: 320px;
+  }
+
+}
+
+@media(min-width: 1024px) and (max-width: 1024px)
+{
+  .slider
+  {
+    top: 320px;
+  }
+  .slogan
+  {
+    top: 15%;
+  }
+  .oferta
+  {
+    top: 20%;
+  }
+  .conditie
+  {
+    top: 25%;
+  }
+  .valabilitate
+  {
+    top: 30%;
+  }
+  .text
+  {
+    top: 35%;
+  }
+
+}
+
+#frame-two
+{
+  display: none;
+  text-align: center;
+}
+#comentarii
+{
+  color: black;
+  font-size: 0.7rem;
+  font-size: 22px;
+}
+#show-comments
+{
+  width: 20%;
+  border: none;
+  margin-top: 30px;
+  color: white;
+  background-color: rgb(63, 55, 55);
+  border-radius: 5px;
+  padding: 18px;
+  transition-duration: 0.5s;
+
+}
+#show-comments:hover
+{
+  background-color: chocolate;
+  cursor: pointer;
+}
+#changeColor-btn 
+{
+  width: 100%;
+  border: none;
+  margin-top: 30px;
+  color: white;
+  background-color: rgb(63, 55, 55);
+  border-radius: 5px;
+  padding: 18px;
+  transition-duration: 0.5s;
+}
+#changeColor-btn:hover
+{
+  background-color: chocolate;
+  cursor: pointer;
+}
+
+audio {
+  display: none;
+}
+#btn-div 
+{
+  position: absolute;
+  top: 80%;
+  left: 45%;
+}

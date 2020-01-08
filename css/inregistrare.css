@@ -1,0 +1,287 @@
+html
+{
+  background-color: whitesmoke;
+  font-family: 'Barlow', sans-serif;
+  font-size: 100%;
+}
+body
+{
+  margin:0;
+}
+a
+{
+  text-decoration: none;
+  color:whitesmoke;
+}
+
+  .titlu
+  {
+    color: chocolate;
+    font-family: 'Pacifico',cursive;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    margin: 0;
+    text-align: center;
+    font-size: 48px;
+    font-size: 3rem;
+    
+
+  }
+  .fixed-bar
+  {
+    height: 70px;
+  }
+  .navbar
+  {
+    text-align: center;
+    padding: 20px;
+
+  }
+  .navbar li
+  {
+    display: inline-block;
+    font-family: 'Lobster',cursive;
+    font-size: 0.7rem;
+    font-size: 14px;
+    width: 12%;
+    background-color: rgb(63, 55, 55);
+    float: none;
+    padding: 0.9rem;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+  }
+  .dropdown li
+  {
+    display: block;
+    padding: 1rem;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    font-size: 16px;
+    font-size: 0.9rem;
+    z-index: 1;
+  }
+  .navbar li:hover
+  {
+    background-color: chocolate;
+    cursor: pointer;
+  }
+  ul
+  {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+  }
+
+  ul li ul {
+    background: transparent;
+    visibility: hidden;
+    opacity: 0;
+    min-width: 3rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    display: none;
+}
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+ul li ul li {
+  clear: both;
+  width: 100%;
+}
+footer
+{
+  display: none;
+}
+@media(min-width: 768px)
+{
+  footer 
+  {
+    display: initial;
+  }
+  .navbar li
+  {
+    font-size: 1.5rem;
+    font-size: 24px;
+    width: 16%;
+  }
+}
+@media(min-width:400px)
+{
+  .navbar li
+  {
+    font-size: 0.9rem;
+    font-size: 16px;
+    width: 13%;
+  }
+  .dropdown li
+  {
+    min-width: 160px;
+    
+  }
+  
+}
+@media(min-width:600px)
+{
+  .navbar li
+  {
+    font-size: 1.25rem;
+    font-size: 20px;
+    width: 14%;
+  }
+}
+@media(min-width: 768px)
+{
+  .navbar li
+  {
+    font-size: 1.5rem;
+    font-size: 24px;
+    width: 16%;
+  }
+
+}
+#wrapper {
+  width: 50%;
+  margin: 20px auto;
+  padding: 50px;
+  background:  rgb(63, 55, 55);
+}
+form {
+  margin: 10px auto;
+}
+.text_input {
+  background: whitesmoke;
+  height: 28px;
+  margin: 2px;
+  border: 1px solid #6B7363;
+  font-size: 1.2em;
+  padding: 5px;
+  width: 95%;
+
+}
+#specificatii
+{
+  color: white;
+  margin-top: 20px;
+}
+#gender
+{
+  margin-top: 20px;
+  color: white;
+}
+.text_input:focus {
+  outline: none;
+}
+label
+{
+  color: burlywood;
+}
+.buton {
+  width: 98%;
+  border: none;
+  margin-top: 30px;
+  color: white;
+  background-color: chocolate;
+  border-radius: 5px;
+  padding: 12px;
+  transition-duration: 0.5s;
+  
+}
+.buton:hover
+{
+  background-color: red;
+  cursor: pointer;
+}
+#varsta_container
+{
+  margin-top: 20px;
+}
+#notif
+{
+  color: whitesmoke;
+}
+#error
+{
+  color: red;
+  font-size: 0.2rem;
+  font-size: 18px;
+}
+span
+{
+  color: red;
+}
+#valuare_varsta
+{
+  background-color: transparent;
+  color: bisque;
+  font-size: 1rem;
+  font-size: 24px;
+}
+#varsta
+{
+  font-size: 1rem;
+  font-size: 24px;
+  color: chocolate;
+}
+#submit
+{
+  font-size: 0.5rem;
+  font-size: 18px;
+}
+#changeColor-btn 
+{
+  width: 100%;
+  border: none;
+  margin-top: 30px;
+  color: white;
+  background-color: rgb(63, 55, 55);
+  border-radius: 5px;
+  padding: 18px;
+  transition-duration: 0.5s;
+  display: none;
+}
+#changeColor-btn:hover
+{
+  background-color: chocolate;
+  cursor: pointer;
+}
+#btn-div 
+{
+  position: absolute;
+}
+#camp-obligatoriu
+{
+  font-size: 0.5rem;
+  font-size: 18px;
+  color: chocolate;
+}
+
+@media(min-width: 768px) 
+{
+  #wrapper
+  {
+    width: 40%;
+  }
+  #changeColor-btn
+  {
+    display: block;
+    width: 80%;
+  }
+}
+@media(min-width: 900px)
+{
+  #wrapper
+  {
+    width: 20%;
+  }
+  #changeColor-btn
+  {
+    width: 100%;
+  }
+}
