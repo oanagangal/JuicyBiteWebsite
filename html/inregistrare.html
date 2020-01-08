@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" id="page">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Inregistrare</title>
+    <link rel="stylesheet" href="css/inregistrare.css">
+    <link rel="shortcut icon" href="css/imagini/favicon-32x32.png" />
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    <script defer src="inregistrare.js"></script>
+    <script defer src="changeStyle.js"></script>
+
+</head>
+<body>
+
+        <header class="fixed-bar">
+                <h1 class="titlu">Juicy Bite!</h1>
+              </header>
+              <nav>
+                <ul class="navbar">
+              
+                  <li><a href="#">Meniu</a>
+                    <ul class="dropdown">
+                      <li><a href="burgers.html">Burgers</a></li>
+                      <li><a href="salty_snacks.html">Snacks</a></li>
+                      <li><a href="drinks.html">Drinks</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="index.html">Acasa</a></li>
+                  <li><a href="Galerie.html">Galerie</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="inregistrare.html">Inregistrare</a></li>
+                </ul>
+                
+              </nav>
+    <main>
+
+        <div id="btn-div">
+                <button id="changeColor-btn">Schimba culoarea!</button>
+        </div>
+        
+        <div id="wrapper">
+        
+                <form action="index.html" id="form" name="formular" method="GET">
+                        <p id="error"> </p>
+        
+                        <div id="camp-obligatoriu">
+                                <p>CAMPURILE MARCATE CU <span>*</span> SUNT OBLIGATORII!</p>
+                        </div>
+        
+                        <div>
+                                <label>Username <span>*</span></label><br>
+                                <input type="text" id="username" name="username" placeholder="username" class="text_input">
+        
+                        </div>
+        
+                        <div>
+                                <label>Parola <span>*</span></label><br>
+                                <input type="password" id="password" name="password" placeholder="parola" class="text_input">
+        
+                        </div>
+        
+                        <div>
+                                <label>Confirmare parola <span>*</span></label><br>
+                                <input type="password" id="password_confirmation" name="password_conf"
+                                        placeholder="confirmare parola" class="text_input">
+        
+                        </div>
+        
+                        <div>
+                                <label>Email <span>*</span></label><br>
+                                <input type="email" id="email" name="email" placeholder="email" class="text_input">
+        
+                        </div>
+        
+                        <div id="gender">
+        
+                                <label>Sunt:</label><br>
+                                <input type="radio" name="gender" value="Femeie">Femeie <br>
+                                <input type="radio" name="gender" value="Barbat">Barbat <br>
+                                <input type="radio" name="gender" value="Altceva">Altceva <br>
+        
+                        </div>
+        
+                        <div id="specificatii">
+                                <label>Specificatii:</label><br>
+                                <input type="checkbox" name="optiunea1" value="op1">Sunt vegan <br>
+                                <input type="checkbox" name="optiunea2" value="op2">Sunt alergic la alune <br>
+                                <input type="checkbox" name="optiunea3" value="op3">Am intoleranta la lactoza <br>
+                                <input type="checkbox" name="optiunea4" value="op4">Am intoleranta la gluten <br>
+                        </div>
+        
+                        <div id="varsta_container">
+                                <p id="varsta">Varsta: <span id="valuare_varsta"></span></p>
+                                <input type="range" id="range_varsta" name="varsta" min="14" max="100" value="18"
+                                        class="text_input">
+                        </div>
+        
+                        <div>
+                                <button type="submit" name="submit" id="submit" class="buton">Inregistreaza-te</button>
+                        </div>
+        
+                </form>
+        </div>
+
+    </main>
+  
+       
+</body>
+
+</html>
